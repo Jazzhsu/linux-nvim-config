@@ -24,7 +24,7 @@ return {
       { "<leader>f", desc = "file" },
 
       { "<leader>c", group = "code" },
-      { "<leader>cs", desc = "code action" },
+      { "<leader>ca", desc = "code action" },
 
       { "<leader>g", group = "format" },
       { "<leader>gf", desc = "format buffer" },
