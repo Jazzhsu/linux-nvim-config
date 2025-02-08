@@ -31,6 +31,10 @@ return {
 
       -- { "g", group = "goto" },
       { "gd", desc = "goto definition" },
+      { "gr", desc = "goto references" },
+      { "gD", desc = "goto declaration" },
+      { "gi", desc = "goto incoming calls" },
+      { "gI", desc = "goto outgoing_calls" },
     })
   end
 }
