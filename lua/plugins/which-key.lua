@@ -23,8 +23,11 @@ return {
 
       { "<leader>f", desc = "file" },
 
+      { "<leader>u", desc = "undo tree" },
+
       { "<leader>c", group = "code" },
       { "<leader>ca", desc = "code action" },
+      { "<leader>ce", desc = "diagnostic" },
 
       { "<leader>g", group = "format" },
       { "<leader>gf", desc = "format buffer" },

@@ -45,6 +45,7 @@ return {
       vim.keymap.set("n", "gi", vim.lsp.buf.incoming_calls, {})
       vim.keymap.set("n", "gI", vim.lsp.buf.outgoing_calls, {})
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set('n', '<leader>ce', vim.diagnostic.open_float)
     end,
   },
 }
