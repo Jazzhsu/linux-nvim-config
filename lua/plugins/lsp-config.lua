@@ -36,6 +36,9 @@ return {
       lspconfig.clangd.setup({
         capabilities = capabilities,
       })
+      lspconfig.ts_ls.setup({
+        capabilities = capabilities,
+      })
 
       -- :h lsp-buf to see details.
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
