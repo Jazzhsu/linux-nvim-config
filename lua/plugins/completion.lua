@@ -32,6 +32,11 @@ return {
         }, {
           { name = "buffer" },
         }),
+        enabled = function()
+          local disabled = false
+          disabled = disabled or require('cmp.config.context').in_treesitter_capture('comment')
+          return not disabled
+        end,
       })
     end,
   },

@@ -25,6 +25,8 @@ return {
 
       { "<leader>u", desc = "undo tree" },
 
+      { "<leader>y", desc = "copy to clipboard", mode = "v" },
+
       { "<leader>c", group = "code" },
       { "<leader>ca", desc = "code action" },
       { "<leader>ce", desc = "diagnostic" },
