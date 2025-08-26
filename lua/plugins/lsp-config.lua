@@ -14,6 +14,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
+          "tsserver",
         },
       })
     end,
@@ -36,9 +37,22 @@ return {
       lspconfig.clangd.setup({
         capabilities = capabilities,
       })
-      lspconfig.ts_ls.setup({
+      lspconfig.tsserver.setup({
+        -- file_types = { "typescript", "typescriptreact", "typescript.tsx" },
         capabilities = capabilities,
       })
+      lspconfig.shfmt.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.sqlls.setup({
+        capabilities = capabilities,
+      })
+
+      require('lspconfig').clangd.setup {
+        init_options = {
+          fallbackFlags = {'--std=c++20'}
+        },
+      }
 
       -- :h lsp-buf to see details.
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
